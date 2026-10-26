@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>奏録V プライバシー ポリシー</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+<header>
+  <img src="logo.png" alt="奏録Vのアイコン">
+  <div>
+    <h1>プライバシー ポリシー</h1>
+    <p class="sub">奏録V（SouRoku V）　制定日：2026年10月26日</p>
+  </div>
+</header>
+
+<p>このプライバシー ポリシーは、Windows 用ツール「奏録V」（以下「本アプリ」）が扱う情報について説明するものです。</p>
+
+<section>
+<h2>1. 基本の考え方</h2>
+<p>本アプリのデータ（持ち曲・演奏記録・コード譜・録音・設定）は、利用者の PC の中に保存します。提供者のサーバーはなく、提供者が利用者の情報を受け取ったり、集めたりすることはありません。利用状況の送信（テレメトリ）や広告もありません。</p>
+</section>
+
+<section>
+<h2>2. PC の中に保存する情報</h2>
+<ul>
+  <li>持ち曲・演奏イベント・演奏記録、コード譜のファイル、表示や録音の設定：<code>%LOCALAPPDATA%\VrcMusicTool\</code></li>
+  <li>録音ファイル：利用者が選んだ保存先</li>
+  <li>Google との接続の情報（アクセス トークンなど）：Windows のデータ保護機能（DPAPI）で暗号化して、その PC の利用者だけが読める形で保存</li>
+</ul>
+<p>これらは本アプリを使う PC から外へ送りません。ただし、次の「3」で利用者が選んだ場合を除きます。</p>
+</section>
+
+<section>
+<h2>3. Google のユーザーデータの扱い</h2>
+<p>利用者が「Google を接続」を選んだ場合に限り、本アプリは Google の OAuth で利用者の許可を受け、利用者自身の Google アカウントに対して次のことを行います。通信の相手は Google だけです。</p>
+<h3>使う権限</h3>
+<ul>
+  <li><code>https://www.googleapis.com/auth/drive.file</code>：本アプリが作ったファイルだけを扱う権限です。Google ドライブにあるほかのファイルを読んだり変えたりはしません。</li>
+</ul>
+<h3>読み取る情報</h3>
+<ul>
+  <li>Google アカウントの表示名と、内部の利用者の識別子：接続したアカウントの確認と、接続後にアカウントが入れ替わっていないかの確認にだけ使います。</li>
+  <li>本アプリが作ったスプレッドシートの内容・シートの構成・共有の設定：書き込んだ内容が正しく保存されたかの確認と、意図しない共有がないかの確認にだけ使います。</li>
+</ul>
+<h3>書き込む情報</h3>
+<ul>
+  <li><strong>持ち曲公開</strong>：利用者が選んだ持ち曲と列（曲名・アーティストなど）だけを書き込み、そのファイルを「リンクを知っている人が閲覧可」に設定します。メモ・コード譜の URL・イベント・内部の ID は含めません。</li>
+  <li><strong>Google 記録</strong>：持ち曲・イベント・演奏記録を、共有しない自分専用のスプレッドシートに書き込みます。本アプリは、このファイルに共有の設定を作りません。</li>
+</ul>
+<h3>共有・転送</h3>
+<p>Google から受け取った情報は、上の目的のために利用者の PC の中でだけ使います。提供者を含む第三者へ送ったり、販売したり、広告に使ったり、人が読んだりすることはありません。</p>
+<p>本アプリによる Google API から受け取った情報の使用と他のアプリへの転送は、限定使用の要件を含め、<a href="https://developers.google.com/terms/api-services-user-data-policy">Google API サービスのユーザーデータに関するポリシー</a>に従います。</p>
+</section>
+
+<section>
+<h2>4. 接続の解除と削除</h2>
+<ul>
+  <li>本アプリの「Google の接続を解除」で、PC に保存した Google との接続の情報を消せます。</li>
+  <li>Google アカウントの <a href="https://myaccount.google.com/permissions">サードパーティ製のアプリとサービス</a> から、本アプリへの許可を取り消せます。</li>
+  <li>本アプリが Google ドライブに作ったスプレッドシートは利用者のファイルです。不要になったら、利用者が Google ドライブで削除してください。本アプリはファイルを削除しません。</li>
+  <li>PC の中のデータは、<code>%LOCALAPPDATA%\VrcMusicTool\</code> を削除すると消えます。</li>
+</ul>
+</section>
+
+<section>
+<h2>5. 外部のページを開く場合</h2>
+<p>持ち曲に登録したコード譜の URL などは、利用者が開くときに、既定のブラウザーで開きます。開いた先のサイトでの情報の扱いは、そのサイトの方針に従います。</p>
+</section>
+
+<section>
+<h2>6. 変更とお問い合わせ</h2>
+<p>このポリシーを変えるときは、このページで知らせます。お問い合わせは、<a href="https://sinfonians.booth.pm/items/8888936">BOOTH の商品ページ</a>からメッセージ機能でお送りください。</p>
+<p class="note">提供者：sinfonians</p>
+</section>
+
+<nav>
+  <a href="index.html">奏録V のトップ</a>
+  <a href="terms.html">利用規約（早期体験版利用条件）</a>
+</nav>
+</main>
+</body>
+</html>
